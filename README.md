@@ -30,6 +30,9 @@ Ensure Python 3.7 or above is installed on your system.
    ```bash
    git clone <repository-url>
 
-2. cd car-price-predictor
+2. ```bash
+   cd car-price-predictor
 
-3. pip install -r requirements.txt
+3. Open terminal 
+   ```bash
+   pip install -r requirements.txt
