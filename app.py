@@ -2,10 +2,6 @@ from flask import Flask, render_template, request
 import pickle
 import pandas as pd
 import numpy as np
-import locale
-import gunicorn
-
-locale.setlocale(locale.LC_ALL, 'en-US.UTF-8')
 
 car = pd.read_csv('Cleaned_data.csv')
 model = pickle.load(open('LinearRegressor.pkl', 'rb'))
@@ -32,7 +28,7 @@ def predict():
     print(carname, company, year, kms, fueltype)
     prediction = model.predict(pd.DataFrame(columns=['name', 'company', 'year', 'kms_driven', 'fuel_type'],
                               data=np.array([carname,company,year,kms,fueltype]).reshape(1, 5)))
-    prediction = locale.format_string("%.2f",prediction[0], grouping=True)
+    prediction = "{:.2f}".format(prediction[0])
     
     return render_template('index.html' , companies=companies, car_name=car_name, years=years, fuel_type=fuel_type, prediction=prediction)
 
