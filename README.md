@@ -28,11 +28,12 @@ Ensure Python 3.7 or above is installed on your system.
 ### Steps
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/sandeshchh30/Second-Hand-Car-Price-Prediction.git
 
-2. ```bash
+2. Open Directory
+   ```bash
    cd car-price-predictor
 
-3. Open terminal 
+4. Install the requirements 
    ```bash
    pip install -r requirements.txt
