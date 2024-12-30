@@ -5,7 +5,7 @@ import numpy as np
 import locale
 import gunicorn
 
-locale.setlocale(locale.LC_ALL, 'en-IN.UTF-8')
+locale.setlocale(locale.LC_ALL, 'en-US.UTF-8')
 
 car = pd.read_csv('Cleaned_data.csv')
 model = pickle.load(open('LinearRegressor.pkl', 'rb'))
