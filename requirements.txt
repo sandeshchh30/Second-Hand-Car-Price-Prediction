@@ -19,7 +19,7 @@ ipython==8.12.3
 jsonpointer==2.1
 keras==3.6.0
 libclang==18.1.1
-mkl-service==2.4.0
+mkl-service==2.4.1
 ml-dtypes==0.4.1
 namex==0.0.8
 nbconvert==7.16.4
